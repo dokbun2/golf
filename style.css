@@ -1,9 +1,73 @@
+/* Paperlogy 폰트 설정 */
+@font-face {
+    font-family: 'Paperlogy-Regular';
+    src: url('./fonts/Paperlogy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Paperlogy-Bold';
+    src: url('./fonts/Paperlogy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Paperlogy-Light';
+    src: url('./fonts/Paperlogy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Paperlogy-Medium';
+    src: url('./fonts/Paperlogy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Paperlogy-SemiBold';
+    src: url('./fonts/Paperlogy-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Paperlogy-ExtraBold';
+    src: url('./fonts/Paperlogy-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Paperlogy-Black';
+    src: url('./fonts/Paperlogy-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Paperlogy-Thin';
+    src: url('./fonts/Paperlogy-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Paperlogy-ExtraLight';
+    src: url('./fonts/Paperlogy-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
 /* 전체 스타일 리셋 및 기본 스타일 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Paperlogy-Regular', 'Noto Sans KR', sans-serif;
 }
 
 body {
@@ -42,23 +106,45 @@ body {
 
 /* 헤더 스타일 */
 .header {
-    background-color: #0c4920; /* 더 짙은 골프 그린 색상 */
-    padding: 18px 0;
+    background: linear-gradient(to bottom, #1a6e3c, #0c4920);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 100;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    padding: 18px 0;
+    margin-top: 10px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    background: linear-gradient(to bottom, #1a6e3c, #0c4920);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: -1;
 }
 
 .logo {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
     padding: 0 20px;
 }
 
 .logo a {
-    color: white;
+    color: #ffd801;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -81,6 +167,8 @@ body {
     font-weight: 600;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     letter-spacing: 0.5px;
+    color: #ffffff;
+    font-family: 'Paperlogy-Bold', sans-serif;
 }
 
 /* 메인 배너 스타일 */
@@ -135,12 +223,13 @@ body {
 
 #search-button {
     background: linear-gradient(135deg, #1a6e3c 0%, #0c4920 100%);
-    color: white;
+    color: #ffffff;
     padding: 0 30px;
     border: none;
     cursor: pointer;
     font-size: 18px;
     transition: all 0.3s;
+    font-family: 'Paperlogy-Medium', sans-serif;
 }
 
 #search-button:hover {
@@ -179,7 +268,7 @@ body {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color: white; /* 흰색 텍스트로 변경 */
+    color: #ffd801;
     padding: 16px 12px; /* 패딩 줄임 */
     text-align: center;
     border-radius: 10px;
@@ -205,16 +294,17 @@ body {
 }
 
 .card-title {
-    font-size: 15px; /* 더 작게 */
+    font-size: 15px;
     font-weight: 600;
-    color: white; /* 흰색 텍스트로 변경 */
+    color: #ffffff;
     letter-spacing: 0.3px;
     transition: color 0.3s;
     line-height: 1.3;
+    font-family: 'Paperlogy-SemiBold', sans-serif;
 }
 
 .card:hover .card-title {
-    color: #ffffff; /* 호버 시에도 흰색 유지 */
+    color: #ffffff;
 }
 
 /* 결과 컨테이너도 동일한 그리드 적용 */
@@ -265,7 +355,7 @@ body {
 
 .page-btn.active {
     background-color: #1a6e3c;
-    color: white;
+    color: #ffd801;
     border-color: #1a6e3c;
 }
 
