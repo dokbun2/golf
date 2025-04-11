@@ -121,6 +121,7 @@ body {
     margin-right: auto;
     border-radius: 12px;
     overflow: hidden;
+    width: calc(100% - 40px);
 }
 
 .header::before {
@@ -227,7 +228,7 @@ body {
     padding: 0 30px;
     border: none;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     transition: all 0.3s;
     font-family: 'Paperlogy-Medium', sans-serif;
 }
@@ -336,13 +337,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px; /* 크기 약간 줄임 */
+    width: 36px;
     height: 36px;
     border-radius: 50%;
     background-color: white;
     border: 1px solid #ddd;
     color: #333;
-    font-size: 14px; /* 글꼴 크기 줄임 */
+    font-size: 16px;
     cursor: pointer;
     transition: all 0.2s ease;
 }
