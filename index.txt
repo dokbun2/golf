@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>덕분이의 골프맛집</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 헤더 섹션 -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">덕분이의 골프맛집</a>
+        </div>
+    </header>
+
+    <!-- 메인 배너 섹션 -->
+    <section class="main-banner">
+        <a href="https://food.dokbun2.com/" target="_blank">
+            <img src="https://via.placeholder.com/1080x400/0c4920/ffffff?text=골프장+인근+맛집을+찾아보세요" alt="골프 맛집 배너">
+        </a>
+    </section>
+
+    <!-- 검색창 섹션 -->
+    <section class="search-section">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="골프장 이름 검색...">
+            <button id="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- 카드 섹션 -->
+    <section class="card-section">
+        <h2 class="section-title">전국 인기 골프장</h2>
+        <div class="card-container">
+            <!-- 카드는 JavaScript로 동적 생성됩니다 -->
+        </div>
+        <!-- 페이지네이션 추가 -->
+        <div class="pagination-container">
+            <div class="pagination">
+                <!-- 페이지 버튼은 JavaScript로 동적 생성됩니다 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 검색 결과 섹션 -->
+    <section class="search-results" id="search-results">
+        <h2 class="section-title">검색 결과</h2>
+        <div class="results-container">
+            <!-- 검색 결과는 JavaScript로 동적 생성됩니다 -->
+        </div>
+    </section>
+
+    <!-- 푸터 섹션 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>골프치기 전, 맛집은 필수!</h3>
+            <p>골프는 체력 소모가 큰 스포츠입니다. 좋은 플레이를 위해서는 적절한 영양 섭취가 필수적입니다. 덕분이의 골프맛집에서 골프장 주변의 숨은 맛집들을 찾아보세요. 든든하게 식사 후 필드에서 최고의 퍼포먼스를 발휘하세요!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
