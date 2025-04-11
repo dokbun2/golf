@@ -1,0 +1,89 @@
+랜딩페이지를 만들어 볼껀데 구성은 헤더, 메인배너, 검색창, 4*4 카드섹션, 푸터로 구성되게 할거야
+전체적인 사이즈 : PC 1920 x 1080, 모바일 웹사이트/앱 디자인: 스마트폰: 360 x 640px, 375 x 667px (iPhone), 414 x 896px (iPhone Plus/Max) 태블릿: 768 x 1024px (iPad), 1024 x 1366px (iPad Pro)에 최적화 되게 구성해줘
+헤더 :  좌측에 "덕분이의 골프맛집"이라는 로고 텍스트를 넣어주고 로고텍스트를 누르면 홈으로 이동하게 설정해줘, 메인배너의 좌측 끝에 위치하게 만들어줘야해. 헤더의 너비는 카드섹션의 좌우측 끝선에 맞줘서 조절해줘
+메인배너 :  사이즈는 너비 1080*400사이즈로 해주고 URL을 넣어서 이미지가 삽입될 수 있게 해주고 이미지를 누르면 https://food.dokbun2.com/로 연결 될 수 있도록 해줘
+검색창 : 검색창은 카드섹션의 내용을 검색할 수 있게 해주고 검색창의 결과 값은 카드섹션 단일로 보여줄 수 있도록 해줘, 검색창의 너비도 카드섹션의 좌우측 끝선에 맞도록 넓혀줘
+카드섹션 : 4*4로 카드섹션을 구성해주고 카드섹션을 누르면 url을 통해 다른 사이트로 접속할 수 있게 해줘, 카드섹션에는 골프장 이름만 들어갈거고 다른 건 들어가는게 없어
+푸터 : 간단한 소개글을 넣어서 골프치기전 골프장 맛집을 찾아야하는 이유를 간략하게 소개할거야
+글꼴 : 글꼴은 fonts폴더에 있는 Paperlogy폰트로 적용할껀데 총 9가지이고 TTF형식으로 되어 있어 적용해줘
+
+각 헤더, 메인배너, 검색창, 카드섹션, 푸터사이의 간격은 아래와 같이 해줘
+헤더와 메인 배너 사이: 30px
+메인 배너와 검색창 사이: 40px
+검색창 내부 패딩: 10px
+검색 버튼과 입력 필드 사이: 10px
+
+디자인 : 골프장과 관련된 디자인으로 깔끔하고 시원한 느낌으로 해주는 색상으로 해줘
+메인배너의 가로너비를 검색창의 가로너비와 같게 해줘
+이제 랜딩페이지를 만들건데 첨부된 내용을 바탕으로 index.css,js로 구분해서 만들어줘
+
+https://food.dokbun2.com/74	H1 CC  
+https://food.dokbun2.com/73	페럼CC  
+https://food.dokbun2.com/72	렉스필드CC 
+https://food.dokbun2.com/71	그린힐CC  
+https://food.dokbun2.com/70	아시아나CC  
+https://food.dokbun2.com/69	렉스필드CC  
+https://food.dokbun2.com/68	로제비앙CC  
+https://food.dokbun2.com/67	힐드로사이CC  
+https://food.dokbun2.com/66	설해원CC  
+https://food.dokbun2.com/65	파인크리크CC  
+https://food.dokbun2.com/64	정산CC  
+https://food.dokbun2.com/63	군산CC  
+https://food.dokbun2.com/60	써미트CC  
+https://food.dokbun2.com/59	골프클럽Q  
+https://food.dokbun2.com/58	코리아CC  
+https://food.dokbun2.com/57	베스트밸리CC  
+https://food.dokbun2.com/56	클럽72CC  
+https://food.dokbun2.com/55	솔트베이CC  
+https://food.dokbun2.com/54	레인보우힐스CC  
+https://food.dokbun2.com/53	양지파인CC  
+https://food.dokbun2.com/52	천룡CC  
+https://food.dokbun2.com/51	가평베네스트CC  
+https://food.dokbun2.com/50	포천아도니스CC  
+https://food.dokbun2.com/49	더크로스비CC  
+https://food.dokbun2.com/48	라비에벨CC  
+https://food.dokbun2.com/47	블랙스톤 이천CC  
+https://food.dokbun2.com/46	파크밸리CC  
+https://food.dokbun2.com/45	성문안CC  
+https://food.dokbun2.com/44	중부CC  
+https://food.dokbun2.com/43	노스팜CC  
+https://food.dokbun2.com/42	실크밸리CC  
+https://food.dokbun2.com/41	서서울CC  
+https://food.dokbun2.com/40	벨라45CC  
+https://food.dokbun2.com/39	한림광릉CC  
+https://food.dokbun2.com/37	파주CC  
+https://food.dokbun2.com/36	썬힐CC, 리앤리CC  
+https://food.dokbun2.com/35	서원힐스CC  
+https://food.dokbun2.com/34	은화삼CC  
+https://food.dokbun2.com/33	신안CC  
+https://food.dokbun2.com/32	비에이비스타CC  
+https://food.dokbun2.com/31	한원CC  
+https://food.dokbun2.com/30	양평TPC  
+https://food.dokbun2.com/29	신라CC  
+https://food.dokbun2.com/28	젠스필드CC  
+https://food.dokbun2.com/27	캐슬렉스CC  
+https://food.dokbun2.com/26	안성베네스트CC  
+https://food.dokbun2.com/25	글렌로스CC  
+https://food.dokbun2.com/24	스카이밸리CC  
+https://food.dokbun2.com/23	써닝포인트CC  
+https://food.dokbun2.com/22	이글몬트CC  
+https://food.dokbun2.com/21	루트 52CC  
+https://food.dokbun2.com/20	더플레이어스CC  
+https://food.dokbun2.com/19	클럽모우CC  
+https://food.dokbun2.com/18	샤인데일CC  
+https://food.dokbun2.com/17	군포 안양CC  
+https://food.dokbun2.com/16	오너스CC  
+https://food.dokbun2.com/15	필로스CC  
+https://food.dokbun2.com/14	비콘힐스CC  
+https://food.dokbun2.com/13	에덴블루CC  
+https://food.dokbun2.com/12	휘슬링락CC  
+https://food.dokbun2.com/11	몽베르CC  
+https://food.dokbun2.com/10	이천마이더스CC  
+https://food.dokbun2.com/9	레이크우드CC  
+https://food.dokbun2.com/8	베뉴지CC  
+https://food.dokbun2.com/7	라싸CC  
+https://food.dokbun2.com/6	금강CC  
+https://food.dokbun2.com/5	포천힐스CC  
+https://food.dokbun2.com/3	솔모로CC  
+https://food.dokbun2.com/2	파가니카CC
+

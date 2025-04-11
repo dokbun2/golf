@@ -166,7 +166,7 @@ body {
 
 .card {
     position: relative;
-    background: white;
+    background-color: #1a6e3c; /* 녹색 배경으로 변경 */
     border-radius: 10px; /* 약간 줄임 */
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
@@ -179,11 +179,11 @@ body {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color: inherit;
+    color: white; /* 흰색 텍스트로 변경 */
     padding: 16px 12px; /* 패딩 줄임 */
     text-align: center;
     border-radius: 10px;
-    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    background: linear-gradient(to bottom, #1a6e3c, #0c4920); /* 녹색 그라데이션 배경 */
     transition: all 0.3s ease;
 }
 
@@ -193,7 +193,7 @@ body {
 }
 
 .card:hover .card-inner {
-    background: linear-gradient(to bottom, #f9f9f9, #edf5ef);
+    background: linear-gradient(to bottom, #0c4920, #073615); /* 호버 시 더 진한 녹색 */
 }
 
 .card-content {
@@ -207,14 +207,14 @@ body {
 .card-title {
     font-size: 15px; /* 더 작게 */
     font-weight: 600;
-    color: #0c4920;
+    color: white; /* 흰색 텍스트로 변경 */
     letter-spacing: 0.3px;
     transition: color 0.3s;
     line-height: 1.3;
 }
 
 .card:hover .card-title {
-    color: #095c23;
+    color: #ffffff; /* 호버 시에도 흰색 유지 */
 }
 
 /* 결과 컨테이너도 동일한 그리드 적용 */
