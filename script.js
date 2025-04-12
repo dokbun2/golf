@@ -391,6 +391,21 @@ const golfCourses = [
         title: "파가니카CC",
         url: "https://food.dokbun2.com/2"
     },
+    {
+        id: 69,
+        title: "레인보우힐스CC",
+        url: "https://food.dokbun2.com/78"
+    },
+    {
+        id: 70,
+        title: "소노펠리체CC",
+        url: "https://food.dokbun2.com/79"
+    },
+    {
+        id: 71,
+        title: "시그너스CC",
+        url: "https://food.dokbun2.com/80"
+    },    
 ];
 
 // DOM이 로드된 후 실행
