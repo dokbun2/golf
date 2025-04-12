@@ -1,4 +1,55 @@
-// 골프장 데이터
+// 검색 기능 설정 함수
+function setupSearch() {
+    const golfCourseSelect = document.getElementById('golf-course-select');
+    const searchButton = document.getElementById('search-button');
+    const searchResults = document.getElementById('search-results');
+    const resultsContainer = document.querySelector('.results-container');
+    
+    // 골프장 이름으로 정렬 (가나다순)
+    const sortedGolfCourses = [...golfCourses].sort((a, b) => {
+        return a.title.localeCompare(b.title, 'ko');
+    });
+    
+    // 드롭다운에 옵션 추가
+    sortedGolfCourses.forEach(course => {
+        const option = document.createElement('option');
+        option.value = course.id;
+        option.textContent = course.title;
+        golfCourseSelect.appendChild(option);
+    });
+    
+    // 검색 버튼 클릭 이벤트
+    searchButton.addEventListener('click', performSearch);
+    
+    // 드롭다운 변경 이벤트
+    golfCourseSelect.addEventListener('change', function() {
+        if (this.value) {
+            performSearch();
+        } else {
+            // 옵션이 선택되지 않았으면 원래 화면으로 돌아감
+            searchResults.style.display = 'none';
+        }
+    });
+    
+    // 검색 실행 함수
+    function performSearch() {
+        const selectedCourseId = parseInt(golfCourseSelect.value);
+        
+        if (!selectedCourseId) {
+            // 선택된 골프장이 없으면 원래 화면으로 돌아감
+            searchResults.style.display = 'none';
+            return;
+        }
+        
+        // 선택된 골프장 찾기
+        const selectedCourse = golfCourses.find(course => course.id === selectedCourseId);
+        
+        // 사용자가 선택한 골프장으로 자동 이동
+        if (selectedCourse && selectedCourse.url) {
+            window.location.href = selectedCourse.url;
+        }
+    }
+}// 골프장 데이터
 const golfCourses = [
     {
         id: 1,
@@ -342,103 +393,11 @@ const golfCourses = [
     },
 ];
 
-// 페이지네이션 설정
-const itemsPerPage = 18; // 한 페이지당 카드 수 (6개씩 3줄 = 18개)
-let currentPage = 1; // 현재 페이지
-
 // DOM이 로드된 후 실행
 document.addEventListener('DOMContentLoaded', function() {
-    // 첫 페이지 골프장 카드 렌더링
-    renderGolfCourseCards(currentPage);
-    
-    // 페이지네이션 버튼 생성
-    setupPagination();
-    
     // 검색 기능 설정
     setupSearch();
 });
-
-// 골프장 카드 렌더링 함수
-function renderGolfCourseCards(page) {
-    const cardContainer = document.querySelector('.card-container');
-    cardContainer.innerHTML = ''; // 기존 카드 삭제
-    
-    // 현재 페이지에 표시할 골프장 계산
-    const startIndex = (page - 1) * itemsPerPage;
-    const endIndex = Math.min(startIndex + itemsPerPage, golfCourses.length);
-    
-    // 현재 페이지에 해당하는 골프장만 카드로 표시
-    for(let i = startIndex; i < endIndex; i++) {
-        const card = createGolfCourseCard(golfCourses[i]);
-        cardContainer.appendChild(card);
-    }
-}
-
-// 페이지네이션 설정 함수
-function setupPagination() {
-    const totalPages = Math.ceil(golfCourses.length / itemsPerPage);
-    const paginationElement = document.querySelector('.pagination');
-    paginationElement.innerHTML = '';
-    
-    // 이전 페이지 버튼
-    const prevButton = document.createElement('button');
-    prevButton.innerHTML = '&laquo;';
-    prevButton.classList.add('page-btn', 'prev-btn');
-    prevButton.addEventListener('click', function() {
-        if(currentPage > 1) {
-            currentPage--;
-            renderGolfCourseCards(currentPage);
-            updatePaginationButtons();
-        }
-    });
-    paginationElement.appendChild(prevButton);
-    
-    // 페이지 번호 버튼들
-    for(let i = 1; i <= totalPages; i++) {
-        const pageButton = document.createElement('button');
-        pageButton.textContent = i;
-        pageButton.classList.add('page-btn');
-        if(i === currentPage) {
-            pageButton.classList.add('active');
-        }
-        pageButton.addEventListener('click', function() {
-            currentPage = i;
-            renderGolfCourseCards(currentPage);
-            updatePaginationButtons();
-        });
-        paginationElement.appendChild(pageButton);
-    }
-    
-    // 다음 페이지 버튼
-    const nextButton = document.createElement('button');
-    nextButton.innerHTML = '&raquo;';
-    nextButton.classList.add('page-btn', 'next-btn');
-    nextButton.addEventListener('click', function() {
-        if(currentPage < totalPages) {
-            currentPage++;
-            renderGolfCourseCards(currentPage);
-            updatePaginationButtons();
-        }
-    });
-    paginationElement.appendChild(nextButton);
-}
-
-// 페이지네이션 버튼 상태 업데이트
-function updatePaginationButtons() {
-    const pageButtons = document.querySelectorAll('.page-btn');
-    pageButtons.forEach(button => {
-        if(button.classList.contains('prev-btn') || button.classList.contains('next-btn')) {
-            return; // 이전/다음 버튼은 건너뜀
-        }
-        
-        const pageNum = parseInt(button.textContent);
-        if(pageNum === currentPage) {
-            button.classList.add('active');
-        } else {
-            button.classList.remove('active');
-        }
-    });
-}
 
 // 개별 골프장 카드 생성 함수
 function createGolfCourseCard(course) {
@@ -456,56 +415,4 @@ function createGolfCourseCard(course) {
     `;
     
     return card;
-}
-
-// 검색 기능 설정 함수
-function setupSearch() {
-    const searchInput = document.getElementById('search-input');
-    const searchButton = document.getElementById('search-button');
-    const searchResults = document.getElementById('search-results');
-    const resultsContainer = document.querySelector('.results-container');
-    const cardSection = document.querySelector('.card-section');
-    
-    // 검색 버튼 클릭 이벤트
-    searchButton.addEventListener('click', performSearch);
-    
-    // 엔터키 입력 이벤트
-    searchInput.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-            performSearch();
-        }
-    });
-    
-    // 검색 실행 함수
-    function performSearch() {
-        const searchTerm = searchInput.value.trim().toLowerCase();
-        
-        if (searchTerm === '') {
-            // 검색어가 없으면 원래 화면으로 돌아감
-            searchResults.style.display = 'none';
-            cardSection.style.display = 'block';
-            return;
-        }
-        
-        // 검색어에 맞는 골프장 필터링
-        const filteredCourses = golfCourses.filter(course => {
-            return course.title.toLowerCase().includes(searchTerm);
-        });
-        
-        // 결과 표시
-        resultsContainer.innerHTML = '';
-        
-        if (filteredCourses.length === 0) {
-            resultsContainer.innerHTML = '<p class="no-results">검색 결과가 없습니다.</p>';
-        } else {
-            filteredCourses.forEach(course => {
-                const card = createGolfCourseCard(course);
-                resultsContainer.appendChild(card);
-            });
-        }
-        
-        // 검색 결과 섹션 표시, 카드 섹션 숨김
-        searchResults.style.display = 'block';
-        cardSection.style.display = 'none';
-    }
 }

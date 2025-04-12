@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script async src="https://pagead.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3297361889610977" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- 헤더 섹션 -->
@@ -18,7 +19,6 @@
             </a>
         </div>
     </header>
-
     <!-- 메인 배너 섹션 -->
     <section class="main-banner">
         <div class="banner-container">
@@ -27,31 +27,37 @@
             </a>
         </div>
     </section>
-
     <!-- 검색창 섹션 -->
     <section class="search-section">
         <div class="search-container">
-            <input type="text" id="search-input" placeholder="골프장 이름 검색...">
+            <select id="golf-course-select" class="golf-course-dropdown">
+                <option value="">골프장을 선택하세요</option>
+                <!-- 드롭다운 옵션은 JavaScript로 동적 생성됩니다 -->
+            </select>
             <button id="search-button">
                 <i class="fas fa-search"></i>
             </button>
         </div>
     </section>
-
-    <!-- 카드 섹션 -->
-    <section class="card-section">
-        <h2 class="section-title">전국 인기 골프장</h2>
-        <div class="card-container">
-            <!-- 카드는 JavaScript로 동적 생성됩니다 -->
-        </div>
-        <!-- 페이지네이션 추가 -->
-        <div class="pagination-container">
-            <div class="pagination">
-                <!-- 페이지 버튼은 JavaScript로 동적 생성됩니다 -->
+    
+    <!-- 애드센스 광고 섹션 -->
+    <section class="adsense-section">
+        <div class="adsense-container">
+            <div class="ad-unit">
+                <!-- 랜딩페이지 상단광고 -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-3297361889610977"
+                     data-ad-slot="1051740099"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
         </div>
     </section>
-
+    
     <!-- 검색 결과 섹션 -->
     <section class="search-results" id="search-results">
         <h2 class="section-title">검색 결과</h2>
@@ -59,7 +65,7 @@
             <!-- 검색 결과는 JavaScript로 동적 생성됩니다 -->
         </div>
     </section>
-
+    
     <!-- 푸터 섹션 -->
     <footer class="footer">
         <div class="footer-content">
@@ -70,4 +76,4 @@
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>

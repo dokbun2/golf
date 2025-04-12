@@ -17,6 +17,9 @@
 메인배너의 가로너비를 검색창의 가로너비와 같게 해줘
 이제 랜딩페이지를 만들건데 첨부된 내용을 바탕으로 index.css,js로 구분해서 만들어줘
 
+
+https://food.dokbun2.com/78	레인보우힐스cc
+
 https://food.dokbun2.com/74	H1 CC  
 https://food.dokbun2.com/73	페럼CC  
 https://food.dokbun2.com/72	렉스필드CC 
