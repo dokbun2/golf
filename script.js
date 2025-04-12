@@ -49,7 +49,31 @@ function setupSearch() {
             window.location.href = selectedCourse.url;
         }
     }
-}// 골프장 데이터
+}
+
+// 개별 골프장 카드 생성 함수
+function createGolfCourseCard(course) {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.setAttribute('data-id', course.id);
+    
+    // 전체 카드를 링크로 만들어 클릭 가능하게 함
+    card.innerHTML = `
+        <a href="${course.url}" target="_blank" class="card-inner">
+            <div class="card-content">
+                <h3 class="card-title">${course.title}</h3>
+            </div>
+        </a>
+    `;
+    
+    return card;
+}
+
+// DOM이 로드된 후 실행
+document.addEventListener('DOMContentLoaded', function() {
+    // 검색 기능 설정
+    setupSearch();
+});// 골프장 데이터
 const golfCourses = [
     {
         id: 1,
@@ -407,27 +431,3 @@ const golfCourses = [
         url: "https://food.dokbun2.com/80"
     },    
 ];
-
-// DOM이 로드된 후 실행
-document.addEventListener('DOMContentLoaded', function() {
-    // 검색 기능 설정
-    setupSearch();
-});
-
-// 개별 골프장 카드 생성 함수
-function createGolfCourseCard(course) {
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.setAttribute('data-id', course.id);
-    
-    // 전체 카드를 링크로 만들어 클릭 가능하게 함
-    card.innerHTML = `
-        <a href="${course.url}" target="_blank" class="card-inner">
-            <div class="card-content">
-                <h3 class="card-title">${course.title}</h3>
-            </div>
-        </a>
-    `;
-    
-    return card;
-}
