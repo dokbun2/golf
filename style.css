@@ -106,13 +106,14 @@ body {
 
 /* 헤더 스타일 */
 .header {
-    background: linear-gradient(to bottom, #1a6e3c, #0c4920);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    box-shadow: none;
     position: sticky;
     top: 0;
     z-index: 100;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
     padding: 15px 0;
     margin-top: 10px;
     max-width: 1200px;
@@ -121,9 +122,13 @@ body {
     border-radius: 0;
     overflow: hidden;
     width: calc(100% - 40px);
+    border: 1px solid #ffffff;
 }
 
 .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     position: relative;
     z-index: 1;
@@ -131,10 +136,11 @@ body {
 }
 
 .logo a {
-    color: #ffd801;
+    color: #1a6e3c;
     text-decoration: none;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     transition: opacity 0.3s ease;
 }
 
@@ -152,13 +158,12 @@ body {
 .logo-text {
     font-size: 26px;
     font-weight: 600;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     letter-spacing: 0.5px;
-    color: #ffffff;
+    color: #1a6e3c;
     font-family: 'Paperlogy-Bold', sans-serif;
 }
 
-/* 메인 배너 스타일 */
+/* 메인 배너 스타일 수정 */
 .main-banner {
     margin-top: 20px;
     padding: 0 20px;
@@ -167,19 +172,26 @@ body {
 .banner-container {
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .main-banner img {
     width: 100%;
-    height: auto;
-    max-height: 400px;
+    max-width: 1200px;
+    height: auto; /* 자동 높이로 비율 유지 */
+    max-height: 800px; /* 최대 높이 제한 */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: contain; /* 이미지가 찌그러지지 않도록 contain으로 변경 */
 }
 
 @media (max-width: 480px) {
     .main-banner img {
-        max-height: 200px;
+        width: 100%;
+        height: 480px;
+        max-height: 480px;
+        aspect-ratio: 1/1;
+        object-fit: cover; /* 모바일에서는 cover 유지 */
     }
 }
 
@@ -193,10 +205,10 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    border-radius: 50px;
+    border-radius: 0;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(26, 110, 60, 0.2);
+    border: 2px solid #1a6e3c; /* 외곽선을 녹색(#1a6e3c)으로 변경 */
 }
 
 .golf-course-dropdown {
@@ -205,7 +217,7 @@ body {
     border: none;
     font-size: 16px;
     outline: none;
-    border-radius: 50px 0 0 50px;
+    border-radius: 0;
     background-color: #fff;
     transition: background-color 0.3s;
     -webkit-appearance: none;
@@ -230,6 +242,7 @@ body {
     font-size: 20px;
     transition: all 0.3s;
     font-family: 'Paperlogy-Medium', sans-serif;
+    border-radius: 0;
 }
 
 #search-button:hover {
