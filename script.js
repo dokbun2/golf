@@ -341,11 +341,6 @@ const golfCourses = [
         url: "https://food.dokbun2.com/2"
     },
     {
-        id: 69,
-        title: "레인보우힐스CC",
-        url: "https://food.dokbun2.com/78"
-    },
-    {
         id: 70,
         title: "소노펠리체CC",
         url: "https://food.dokbun2.com/79"
