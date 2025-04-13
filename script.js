@@ -430,4 +430,33 @@ const golfCourses = [
         title: "시그너스CC",
         url: "https://food.dokbun2.com/80"
     },    
+    {
+        id: 71,
+        title: "세라지오CC",
+        url: "https://food.dokbun2.com/81"
+    }, 
+    {
+        id: 73,
+        title: "푸른솔포천CC",
+        url: "https://food.dokbun2.com/82"
+    },
+    {
+        id: 74,
+        title: "발리오스CC",
+        url: "https://food.dokbun2.com/83"
+    },
+    {
+        id: 75,
+        title: "웰리힐리CC",
+        url: "https://food.dokbun2.com/84"
+    },
+    {
+        id: 76,
+        title: "강남300CC",
+        url: "https://food.dokbun2.com/85"
+    },
+    {
+        
+    }
+    
 ];
