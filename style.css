@@ -1,63 +1,63 @@
 /* Paperlogy 폰트 설정 */
 @font-face {
     font-family: 'Paperlogy-Regular';
-    src: url('./fonts/Paperlogy-Regular.ttf') format('truetype');
+    src: url('./fonts/Paperlogy-4Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Paperlogy-Bold';
-    src: url('./fonts/Paperlogy-Bold.ttf') format('truetype');
+    src: url('./fonts/Paperlogy-7Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Paperlogy-Light';
-    src: url('./fonts/Paperlogy-Light.ttf') format('truetype');
+    src: url('./fonts/Paperlogy-3Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Paperlogy-Medium';
-    src: url('./fonts/Paperlogy-Medium.ttf') format('truetype');
+    src: url('./fonts/Paperlogy-5Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Paperlogy-SemiBold';
-    src: url('./fonts/Paperlogy-SemiBold.ttf') format('truetype');
+    src: url('./fonts/Paperlogy-6SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Paperlogy-ExtraBold';
-    src: url('./fonts/Paperlogy-ExtraBold.ttf') format('truetype');
+    src: url('./fonts/Paperlogy-8ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Paperlogy-Black';
-    src: url('./fonts/Paperlogy-Black.ttf') format('truetype');
+    src: url('./fonts/Paperlogy-9Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Paperlogy-Thin';
-    src: url('./fonts/Paperlogy-Thin.ttf') format('truetype');
+    src: url('./fonts/Paperlogy-1Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Paperlogy-ExtraLight';
-    src: url('./fonts/Paperlogy-ExtraLight.ttf') format('truetype');
+    src: url('./fonts/Paperlogy-2ExtraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
@@ -181,22 +181,46 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #1a6e3c;
 }
 
 .main-banner img {
     width: 100%;
-    max-width: 1200px;
-    height: auto;
+    height: 100%;
     max-height: 800px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
 }
 
 @media (max-width: 480px) {
     .main-banner img {
-        max-width: 480px;
+        max-width: 100%;
+        height: auto;
         max-height: 420px;
-        aspect-ratio: 1/1;
+        aspect-ratio: auto;
+        object-fit: cover;
+        object-position: center center;
+        border-radius: 0;
+    }
+    
+    .logo-text {
+        font-size: 24px;
+    }
+    
+    .logo-image {
+        height: 28px;
+    }
+    
+    .logo-container {
+        padding: 0 30px;
     }
 }
 
@@ -205,7 +229,6 @@ body {
     margin-top: 0;
     padding: 0 20px;
     background-color: #ffffff;
-    padding-top: px;
     padding-bottom: 25px;
 }
 
