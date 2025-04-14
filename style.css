@@ -163,7 +163,7 @@ body {
 }
 
 .logo-text {
-    font-size: 26px;
+    font-size: 32px;
     font-weight: 600;
     letter-spacing: 0.5px;
     color: #1a6e3c;
@@ -195,7 +195,7 @@ body {
 @media (max-width: 480px) {
     .main-banner img {
         max-width: 480px;
-        max-height: 460px;
+        max-height: 420px;
         aspect-ratio: 1/1;
     }
 }
