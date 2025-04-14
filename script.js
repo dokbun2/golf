@@ -375,6 +375,21 @@ const golfCourses = [
         title: "강남300CC",
         url: "https://food.dokbun2.com/85"
     },  
+    {
+        id: 77,
+        title: "뉴스프링빌CC",
+        url: "https://food.dokbun2.com/86"
+    },
+    {
+        id: 78,
+        title: "진양밸리CC",
+        url: "https://food.dokbun2.com/87"
+    },
+    {
+        id: 79,
+        title: "아리지CC",
+        url: "https://food.dokbun2.com/88"
+    },
 ];
 
 // 검색 기능 설정 함수
