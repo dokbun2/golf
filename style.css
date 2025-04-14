@@ -195,7 +195,7 @@ body {
 @media (max-width: 480px) {
     .main-banner img {
         max-width: 480px;
-        max-height: 480px;
+        max-height: 460px;
         aspect-ratio: 1/1;
     }
 }
@@ -260,7 +260,7 @@ body {
 
 /* 애드센스 광고 섹션 스타일 */
 .adsense-section {
-    margin-top: 50px;
+    margin-top: 5px;
     padding: 0 20px;
 }
 
@@ -359,7 +359,7 @@ body {
 
 /* 푸터 스타일 */
 .footer {
-    margin-top: 60px;
+    margin-top: 10px;
     background: linear-gradient(to bottom, #1a3c2a, #0c2717);
     color: white;
     padding: 50px 20px;
