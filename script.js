@@ -374,7 +374,7 @@ const golfCourses = [
         id: 76,
         title: "강남300CC",
         url: "https://food.dokbun2.com/85"
-    }  
+    },  
 ];
 
 // 검색 기능 설정 함수
