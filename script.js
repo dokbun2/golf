@@ -390,6 +390,16 @@ const golfCourses = [
         title: "아리지CC",
         url: "https://food.dokbun2.com/88"
     },
+    {
+        id: 80,
+        title: "양지파인CC",
+        url: "https://food.dokbun2.com/90"
+    },
+    {
+        id: 81,
+        title: "로얄포레CC",
+        url: "https://food.dokbun2.com/91"
+    },    
 ];
 
 // 검색 기능 설정 함수
