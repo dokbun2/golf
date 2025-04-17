@@ -430,6 +430,31 @@ const golfCourses = [
         title: "제이드팰리스CC",
         url: "https://food.dokbun2.com/98"
     },
+    {
+        id: 87,
+        title: "해슬리 나인브릿지 GC",
+        url: "https://food.dokbun2.com/99"
+    },
+    {
+        id: 88,
+        title: "떼제베 CC",
+        url: "https://food.dokbun2.com/100"
+    },
+    {
+        id: 89,
+        title: "세이지우드 홍천 CC",
+        url: "https://food.dokbun2.com/101"
+    },
+    {
+        id: 90,
+        title: "서산수 CC",
+        url: "https://food.dokbun2.com/102"
+    },
+    {
+        id: 91,
+        title: "블루원 용인 CC",
+        url: "https://food.dokbun2.com/103"
+    },
 ];
 
 // 검색 기능 설정 함수

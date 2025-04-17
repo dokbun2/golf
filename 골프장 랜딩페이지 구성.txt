@@ -17,7 +17,7 @@
 메인배너의 가로너비를 검색창의 가로너비와 같게 해줘
 이제 랜딩페이지를 만들건데 첨부된 내용을 바탕으로 index.css,js로 구분해서 만들어줘
 
-
+https://golf.dokbun2.com
 
 
 
@@ -45,8 +45,7 @@
 더클래식 GC(제주)
 도고 CC
 드비치 GC
-떼제베 CC
-라데나 GC
+
 라온 GC(제주)
 레이캐슬 CC
 롯데 스카이힐 CC(제주)
@@ -61,14 +60,13 @@
 부산 해운대 CC
 블루원 디아너스 CC
 블루원 상주 CC
-블루원 용인 CC
+
 사우스케이프 오너스클럽
 사이프러스 GC(제주)
 사천 CC
-서산수 CC
-서원밸리 CC
+
 세븐밸리 CC
-세이지우드 홍천 CC
+
 솔라고 CC
 송추 CC
 스카이72 골프앤리조트
@@ -81,16 +79,13 @@
 우정힐스 GC
 울산 동천 CC
 울산 CC
-웰링턴 CC
 일죽썬밸리 CC
 임페리얼레이크 CC
 잭 니클라우스 클럽 코리아
-제이드 팰리스 GC
 제주 블랙스톤 골프리조트
 진주 CC
 창원 CC
 창원 파크사이드 CC
-천룡 GC(충북)
 천안상록 CC
 캐슬렉스 제주
 코스카 CC
@@ -104,7 +99,14 @@
 핀크스 GC(제주)
 핑크스 GC
 해비치 CC(제주)
-해슬리 나인브릿지 GC
+
+
+https://food.dokbun2.com/103	블루원 용인 CC
+https://food.dokbun2.com/102	서산수 CC
+https://food.dokbun2.com/101	세이지우드 홍천 CC
+https://food.dokbun2.com/100	떼제베 CC
+https://food.dokbun2.com/99	해슬리 나인브릿지 GC
+https://food.dokbun2.com/98	제이드팰리스CC
 https://food.dokbun2.com/97	해운대비치 CC
 https://food.dokbun2.com/96	동래베네스트 CC
 https://food.dokbun2.com/95	해피니스 GC
