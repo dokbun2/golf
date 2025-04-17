@@ -425,6 +425,11 @@ const golfCourses = [
         title: "로얄포레CC",
         url: "https://food.dokbun2.com/91"
     },
+    {
+        id: 86,
+        title: "제이드팰리스CC",
+        url: "https://food.dokbun2.com/98"
+    },
 ];
 
 // 검색 기능 설정 함수
