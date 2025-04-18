@@ -27,7 +27,6 @@ https://golf.dokbun2.com
 경주 신라 CC
 경주 화랑 CC
 경주 힐튼 CC
-곤지암 GC
 골든베이 골프&리조트
 그랜드 CC
 김해 가야 CC
@@ -51,7 +50,7 @@ https://golf.dokbun2.com
 무안 CC
 무주덕유산 CC
 백제 CC
-베어즈베스트 청라
+
 부산 아시아드 CC
 부산 CC
 부산 해운대 CC
@@ -60,15 +59,11 @@ https://golf.dokbun2.com
 사우스케이프 오너스클럽
 사이프러스 GC(제주)
 사천 CC
-
 세븐밸리 CC
-
 솔라고 CC
-
 스카이72 골프앤리조트
 신원 CC
 아름다운 골프앤리조트
-
 에콜리안 제천 골프장
 엘리시안 제주 GC
 오라 GC(제주)
@@ -85,8 +80,6 @@ https://golf.dokbun2.com
 천안상록 CC
 캐슬렉스 제주
 코스카 CC
-트리니티 클럽
-파인리즈 CC
 파인비치 골프 링크스
 파인스톤 CC
 포항 파인비치 CC
@@ -95,7 +88,10 @@ https://golf.dokbun2.com
 핀크스 GC(제주)
 핑크스 GC
 해비치 CC(제주)
-
+https://food.dokbun2.com/111	베어즈베스트 청라
+https://food.dokbun2.com/110	우정힐스 GC
+https://food.dokbun2.com/108	파인리즈 CC
+https://food.dokbun2.com/107	트리니티 CC
 https://food.dokbun2.com/106	곤지함GC
 https://food.dokbun2.com/105	송추 CC
 https://food.dokbun2.com/103	블루원 용인 CC

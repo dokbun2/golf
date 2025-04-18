@@ -465,6 +465,26 @@ const golfCourses = [
         title: "곤지함GC",
         url: "https://food.dokbun2.com/106"
     },
+    {
+        id: 94,
+        title: "트리니티 CC",
+        url: "https://food.dokbun2.com/107"
+    },
+    {
+        id: 95,
+        title: "파인리즈 CC",
+        url: "https://food.dokbun2.com/108"
+    },
+    {
+        id: 96,
+        title: "우정힐스 GC",
+        url: "https://food.dokbun2.com/110"
+    },
+    {
+        id: 97,
+        title: "베어즈베스트 청라",
+        url: "https://food.dokbun2.com/111"
+    },
 ];
 
 // 검색 기능 설정 함수
