@@ -455,6 +455,16 @@ const golfCourses = [
         title: "블루원 용인 CC",
         url: "https://food.dokbun2.com/103"
     },
+    {
+        id: 92,
+        title: "송추 CC",
+        url: "https://food.dokbun2.com/105"
+    },
+    {
+        id: 93,
+        title: "곤지함GC",
+        url: "https://food.dokbun2.com/106"
+    },
 ];
 
 // 검색 기능 설정 함수
