@@ -495,6 +495,11 @@ const golfCourses = [
         title: "임페리얼레이크 CC",
         url: "https://food.dokbun2.com/113"
     },
+    {
+        id: 100,
+        title: "엘리시안 강촌 CC",
+        url: "https://food.dokbun2.com/115"
+    },
 ];
 
 // 검색 기능 설정 함수
