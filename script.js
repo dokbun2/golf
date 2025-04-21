@@ -485,6 +485,16 @@ const golfCourses = [
         title: "베어즈베스트 청라",
         url: "https://food.dokbun2.com/111"
     },
+    {
+        id: 98,
+        title: "남부 CC",
+        url: "https://food.dokbun2.com/112"
+    },
+    {
+        id: 99,
+        title: "임페리얼레이크 CC",
+        url: "https://food.dokbun2.com/113"
+    },
 ];
 
 // 검색 기능 설정 함수

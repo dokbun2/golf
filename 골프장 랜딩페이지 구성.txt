@@ -67,7 +67,6 @@ https://golf.dokbun2.com
 에콜리안 제천 골프장
 엘리시안 제주 GC
 오라 GC(제주)
-우정힐스 GC
 울산 동천 CC
 울산 CC
 일죽썬밸리 CC
@@ -88,6 +87,8 @@ https://golf.dokbun2.com
 핀크스 GC(제주)
 핑크스 GC
 해비치 CC(제주)
+https://food.dokbun2.com/113	임페리얼레이크 CC
+https://food.dokbun2.com/112	남부 CC
 https://food.dokbun2.com/111	베어즈베스트 청라
 https://food.dokbun2.com/110	우정힐스 GC
 https://food.dokbun2.com/108	파인리즈 CC
