@@ -500,6 +500,16 @@ const golfCourses = [
         title: "엘리시안 강촌 CC",
         url: "https://food.dokbun2.com/115"
     },
+    {
+        id: 101,
+        title: "킹스데일 GC",
+        url: "https://food.dokbun2.com/116"
+    },    
+    {
+        id: 102,
+        title: "태광 CC",
+        url: "https://food.dokbun2.com/117"
+    }, 
 ];
 
 // 검색 기능 설정 함수
