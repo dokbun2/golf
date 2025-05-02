@@ -514,7 +514,32 @@ const golfCourses = [
         id: 103,
         title: "그랜드 CC",
         url: "https://food.dokbun2.com/118"
-    },        
+    },
+    {
+        id: 104,
+        title: "로얄링스 CC",
+        url: "https://food.dokbun2.com/123"
+    },
+    {
+        id: 105,
+        title: "솔라고 CC",
+        url: "https://food.dokbun2.com/122"
+    },
+    {
+        id: 106,
+        title: "아름다운CC",
+        url: "https://food.dokbun2.com/121"
+    },
+    {
+        id: 107,
+        title: "청평마이다스CC",
+        url: "https://food.dokbun2.com/120"
+    },
+    {
+        id: 108,
+        title: "양주 CC",
+        url: "https://food.dokbun2.com/119"
+    }
 ];
 
 // 검색 기능 설정 함수
