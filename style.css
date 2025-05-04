@@ -175,6 +175,7 @@ body {
 .main-banner {
     margin-top: 0;
     padding: 0 20px;
+    margin-bottom: 20px;
 }
 
 .banner-container {
@@ -246,7 +247,7 @@ body {
     flex: 1;
     padding: 18px 25px;
     border: none;
-    font-size: 16px;
+    font-size: 20px;
     outline: none;
     border-radius: 0;
     background-color: #fff;

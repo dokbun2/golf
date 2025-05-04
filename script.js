@@ -514,7 +514,7 @@ const golfCourses = [
         id: 103,
         title: "그랜드 CC",
         url: "https://food.dokbun2.com/118"
-    },
+    },        
     {
         id: 104,
         title: "로얄링스 CC",
