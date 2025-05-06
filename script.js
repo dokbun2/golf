@@ -1,5 +1,5 @@
-// 골프장 데이터
-const golfCourses = [
+// 골프장 데이터를 모두 직접 스크립트에 포함 (외부 파일 로드 문제 해결)
+const allGolfCourses = [
     {
         id: 1,
         title: "해운대비치 CC",
@@ -504,7 +504,7 @@ const golfCourses = [
         id: 101,
         title: "킹스데일 GC",
         url: "https://food.dokbun2.com/116"
-    },    
+    },
     {
         id: 102,
         title: "태광 CC",
@@ -514,7 +514,7 @@ const golfCourses = [
         id: 103,
         title: "그랜드 CC",
         url: "https://food.dokbun2.com/118"
-    },        
+    },
     {
         id: 104,
         title: "로얄링스 CC",
@@ -539,11 +539,67 @@ const golfCourses = [
         id: 108,
         title: "양주 CC",
         url: "https://food.dokbun2.com/119"
+    },
+    {
+        id: 109,
+        title: "블루헤런GC",
+        url: "https://food.dokbun2.com/132"
+    },
+    {
+        id: 110,
+        title: "동촌CC",
+        url: "https://food.dokbun2.com/131"
+    },
+    {
+        id: 111,
+        title: "포레스트힐CC",
+        url: "https://food.dokbun2.com/130"
+    },
+    {
+        id: 112,
+        title: "이포CC",
+        url: "https://food.dokbun2.com/130"
+    },
+    {
+        id: 113,
+        title: "김포씨사이드CC",
+        url: "https://food.dokbun2.com/129"
+    },
+    {
+        id: 114,
+        title: "무등산CC",
+        url: "https://food.dokbun2.com/128"
+    },
+    {
+        id: 115,
+        title: "세븐밸리CC",
+        url: "https://food.dokbun2.com/127"
+    },
+    {
+        id: 116,
+        title: "골프존카운티 선산CC",
+        url: "https://food.dokbun2.com/126"
+    },
+    {
+        id: 117,
+        title: "파인스톤 CC",
+        url: "https://food.dokbun2.com/125"
+    },
+    {
+        id: 118,
+        title: "천안상록 CC",
+        url: "https://food.dokbun2.com/124"
     }
 ];
 
-// 검색 기능 설정 함수
-function setupSearch() {
+// 초기화 함수 - 모든 골프장 데이터 사용
+function initializeGolfCourseSearch() {
+    console.log("골프장 검색 초기화 - 전체 " + allGolfCourses.length + "개 골프장 사용");
+    setupSearch(allGolfCourses);
+}
+
+// 검색 기능 설정 함수 (golfCourses 데이터를 인자로 받도록 수정)
+function setupSearch(golfCourses) {
     console.log("setupSearch 함수 실행됨");
     
     const golfCourseSelect = document.getElementById('golf-course-select');
@@ -554,7 +610,7 @@ function setupSearch() {
         return;
     }
     
-    // 기존 옵션 지우기 (중복 방지)
+    // 기존 옵션 지우기 (첫 번째 "골프장을 선택하세요" 옵션 제외)
     while (golfCourseSelect.options.length > 1) {
         golfCourseSelect.remove(1);
     }
@@ -567,55 +623,63 @@ function setupSearch() {
     // 드롭다운에 옵션 추가
     sortedGolfCourses.forEach(course => {
         const option = document.createElement('option');
-        option.value = course.id;
+        option.value = course.id; // 값으로 ID를 사용 (URL 대신)
         option.textContent = course.title;
         golfCourseSelect.appendChild(option);
     });
     
     // 검색 버튼 클릭 이벤트
-    searchButton.addEventListener('click', performSearch);
+    searchButton.addEventListener('click', () => performSearch(golfCourses, golfCourseSelect)); // golfCourses와 select 요소 전달
     
     // 드롭다운 변경 이벤트
     golfCourseSelect.addEventListener('change', function() {
         if (this.value) {
-            performSearch();
+            performSearch(golfCourses, this); // golfCourses와 현재 select 요소 전달
         }
     });
+}
+
+// 검색 실행 함수 (golfCourses와 select 요소를 인자로 받도록 수정)
+function performSearch(golfCourses, golfCourseSelectElement) {
+    console.log("performSearch 함수 실행됨");
     
-    // 검색 실행 함수
-    function performSearch() {
-        console.log("performSearch 함수 실행됨");
-        
-        const selectedCourseId = parseInt(golfCourseSelect.value);
-        console.log("선택된 ID:", selectedCourseId);
-        
-        if (!selectedCourseId) {
-            console.log("선택된 골프장이 없음");
-            return;
-        }
-        
-        // 선택된 골프장 찾기
-        const selectedCourse = golfCourses.find(course => course.id === selectedCourseId);
-        console.log("선택된 골프장:", selectedCourse);
-        
-        // 사용자가 선택한 골프장으로 자동 이동
-        if (selectedCourse && selectedCourse.url) {
-            console.log("이동할 URL:", selectedCourse.url);
-            window.location.href = selectedCourse.url;
-        } else {
-            console.error("선택된 골프장의 URL을 찾을 수 없습니다.");
-        }
+    const selectedCourseId = parseInt(golfCourseSelectElement.value);
+    console.log("선택된 ID:", selectedCourseId);
+    
+    if (!selectedCourseId) {
+        console.log("선택된 골프장이 없음");
+        return;
+    }
+    
+    // 선택된 골프장 찾기
+    const selectedCourse = golfCourses.find(course => course.id === selectedCourseId);
+    console.log("선택된 골프장:", selectedCourse);
+    
+    // 사용자가 선택한 골프장으로 자동 이동
+    if (selectedCourse && selectedCourse.url) {
+        console.log("이동할 URL:", selectedCourse.url);
+        window.location.href = selectedCourse.url;
+    } else {
+        console.error("선택된 골프장의 URL을 찾을 수 없습니다.");
     }
 }
 
 // DOM이 로드된 후 실행
 document.addEventListener('DOMContentLoaded', function() {
     console.log("DOMContentLoaded 이벤트 발생");
-    setupSearch();
+    initializeGolfCourseSearch(); // 전체 데이터를 사용하는 초기화 함수 호출
 });
 
 // 페이지가 이미 로드된 경우를 대비한 즉시 실행 검사
 if (document.readyState === 'complete' || document.readyState === 'interactive') {
-    console.log("페이지가 이미 로드됨, setupSearch 직접 호출");
-    setupSearch();
+    console.log("페이지가 이미 로드되어 있음");
+    setTimeout(function() {
+        var hasOptions = document.getElementById('golf-course-select') && 
+                        document.getElementById('golf-course-select').options.length > 1;
+        
+        if (!hasOptions) {
+            console.log("골프장 옵션이 아직 로드되지 않음, 초기화 함수 호출");
+            initializeGolfCourseSearch();
+        }
+    }, 100);
 }
