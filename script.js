@@ -558,7 +558,7 @@ const allGolfCourses = [
     {
         id: 112,
         title: "이포CC",
-        url: "https://food.dokbun2.com/130"
+        url: "https://food.dokbun2.com/129"
     },
     {
         id: 113,
