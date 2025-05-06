@@ -563,7 +563,7 @@ const allGolfCourses = [
     {
         id: 113,
         title: "김포씨사이드CC",
-        url: "https://food.dokbun2.com/129"
+        url: "https://food.dokbun2.com/133"
     },
     {
         id: 114,
