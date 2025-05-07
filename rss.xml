@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>골프 블로그</title>
+    <link>https://golf.dokbun2.com</link>
+    <description>골프 관련 최신 정보와 팁을 제공하는 블로그입니다.</description>
+    <language>ko-kr</language>
+    <pubDate>Wed, 07 May 2025 09:00:00 +0900</pubDate>
+    <lastBuildDate>Wed, 07 May 2025 09:00:00 +0900</lastBuildDate>
+    <atom:link href="https://golf.dokbun2.com/rss" rel="self" type="application/rss+xml" />
+    
+    <!-- 첫 번째 게시물 -->
+    <item>
+      <title>골프 스윙 기본 가이드</title>
+      <link>https://golf.dokbun2.com/post/1</link>
+      <guid>https://golf.dokbun2.com/post/1</guid>
+      <pubDate>Wed, 07 May 2025 08:00:00 +0900</pubDate>
+      <description><![CDATA[초보자를 위한 골프 스윙의 기본 원리와 자세에 대해 알아봅니다. 올바른 그립 잡는 방법부터 스윙 궤도까지 상세히 설명합니다.]]></description>
+      <category>레슨</category>
+    </item>
+    
+    <!-- 두 번째 게시물 -->
+    <item>
+      <title>국내 추천 골프장 TOP 10</title>
+      <link>https://golf.dokbun2.com/post/2</link>
+      <guid>https://golf.dokbun2.com/post/2</guid>
+      <pubDate>Tue, 06 May 2025 14:30:00 +0900</pubDate>
+      <description><![CDATA[한국에서 꼭 방문해야 할 명품 골프 코스 10곳을 소개합니다. 코스 특징, 난이도, 예약 팁까지 함께 알려드립니다.]]></description>
+      <category>골프장</category>
+    </item>
+    
+    <!-- 세 번째 게시물 -->
+    <item>
+      <title>골프 클럽 선택 가이드</title>
+      <link>https://golf.dokbun2.com/post/3</link>
+      <guid>https://golf.dokbun2.com/post/3</guid>
+      <pubDate>Mon, 05 May 2025 11:15:00 +0900</pubDate>
+      <description><![CDATA[자신에게 맞는 골프 클럽을 선택하는 방법. 드라이버부터 퍼터까지 각 클럽의 특징과 선택 시 고려해야 할 사항을 설명합니다.]]></description>
+      <category>장비</category>
+    </item>
+    
+    <!-- 네 번째 게시물 -->
+    <item>
+      <title>골프 규칙 변경사항 2025년 업데이트</title>
+      <link>https://golf.dokbun2.com/post/4</link>
+      <guid>https://golf.dokbun2.com/post/4</guid>
+      <pubDate>Sun, 04 May 2025 09:45:00 +0900</pubDate>
+      <description><![CDATA[2025년에 변경된 골프 규칙에 대해 알아봅니다. 주요 변경사항과 그에 따른 플레이 방식의 차이점을 정리했습니다.]]></description>
+      <category>규칙</category>
+    </item>
+    
+    <!-- 다섯 번째 게시물 -->
+    <item>
+      <title>골프 멘탈 게임: 집중력 향상 방법</title>
+      <link>https://golf.dokbun2.com/post/5</link>
+      <guid>https://golf.dokbun2.com/post/5</guid>
+      <pubDate>Sat, 03 May 2025 16:20:00 +0900</pubDate>
+      <description><![CDATA[골프에서 멘탈 관리의 중요성과 집중력을 향상시키는 실질적인 방법들에 대해 알아봅니다. 프로 선수들이 사용하는 테크닉도 소개합니다.]]></description>
+      <category>멘탈</category>
+    </item>
+  </channel>
+</rss>
